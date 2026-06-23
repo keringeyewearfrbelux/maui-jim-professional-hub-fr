@@ -26,12 +26,9 @@
       margin: 0;
       min-height: 100%;
       background: var(--black);
-      font-family: "ABCFavorit", "ABC Favorit", "Favorit", "Helvetica Neue", Arial, sans-serif;
+      font-family: "ABCFavorit Medium", "ABCFavorit", "ABC Favorit", "Favorit", "Helvetica Neue", Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       text-rendering: geometricPrecision;
-    }
-
-    body {
       overflow-x: hidden;
     }
 
@@ -44,10 +41,7 @@
       overflow: hidden;
       color: var(--white);
       isolation: isolate;
-      background:
-        radial-gradient(circle at 18% 24%, rgba(0, 140, 190, .35), transparent 34%),
-        radial-gradient(circle at 82% 68%, rgba(242, 130, 40, .28), transparent 32%),
-        linear-gradient(135deg, #06161b 0%, #070707 55%, #140f08 100%);
+      background: #070707;
     }
 
     .hero-video {
@@ -77,6 +71,7 @@
       width: min(248px, 56vw);
       height: auto;
       opacity: .98;
+      z-index: 2;
     }
 
     .fallback-logo {
@@ -89,6 +84,7 @@
       letter-spacing: .12em;
       display: none;
       white-space: nowrap;
+      z-index: 2;
     }
 
     .content {
@@ -100,6 +96,7 @@
       align-items: center;
       justify-content: center;
       min-height: 100svh;
+      z-index: 1;
     }
 
     h1 {
@@ -157,11 +154,6 @@
       transform: translateY(-1px);
     }
 
-    .button:active {
-      transform: translateY(0);
-      opacity: .82;
-    }
-
     .footer-line {
       position: absolute;
       bottom: 24px;
@@ -174,6 +166,7 @@
       font-size: 11px;
       line-height: 1.4;
       text-align: center;
+      z-index: 1;
     }
 
     @media (max-width: 680px) {
@@ -224,7 +217,8 @@
 
 <body>
   <main class="hero" aria-label="Maui Jim professional resources hub">
-    <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+
+    <video class="hero-video" autoplay muted loop playsinline preload="auto">
       <source src="assets/maui-jim-video.mp4" type="video/mp4" />
     </video>
 
