@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Maui Jim — Hub Professionnel</title>
+  <style>
+    :root {
+      --black: #070707;
+      --white: #ffffff;
+      --soft-white: rgba(255,255,255,.82);
+      --line: rgba(255,255,255,.58);
+      --line-hover: rgba(255,255,255,.96);
+      --button-bg: rgba(255,255,255,.04);
+      --button-bg-hover: rgba(255,255,255,.12);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--black);
+      font-family: "ABCFavorit Medium", "ABCFavorit", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+    video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+    .overlay { position: absolute; inset:0; background: rgba(0,0,0,.4); z-index:-1; }
+
+    h1 { font-size: clamp(38px,6vw,78px); text-transform: uppercase; margin:0; }
+    p { font-size: 15px; margin-top:15px; color: var(--soft-white); }
+
+    .actions { margin-top:40px; display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
+    .button {
+      border:1px solid var(--line);
+      padding:14px 22px;
+      border-radius:999px;
+      text-decoration:none;
+      color:white;
+      background: var(--button-bg);
+      transition:.2s;
+    }
+    .button:hover { background: var(--button-bg-hover); }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="assets/Maui Jim Video.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+
+    <div>
+      <h1>COLOR YOU CAN FEEL</h1>
+      <p>Retrouvez toutes vos ressources Maui Jim en un seul endroit.</p>
+
+      <div class="actions">
+        <a class="button" href="https://eyelearn.keringeyewear.com/access/login" target="_blank">Formez-vous avec Kering Eyelearn</a>
+        <a class="button" href="https://trade.mauijim.com/mauijimb2bstorefront/fr_FR/login" target="_blank">Accéder à votre plateforme B2B</a>
+        <a class="button" href="https://kering.sharepoint.com/:f:/r/sites/VisuelsMarquesKeringEyewearFrance/Shared%20Documents/0.CLIENTS/MAUI%20JIM?csf=1&web=1&e=bztIEH" target="_blank">Accéder aux visuels de communication</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
